@@ -3,6 +3,10 @@ CSAICSBTeam0012
 
 ### Team Kernel Crypters
 ### Project idea: Google Pay
+### https://github.com/IIITLucknowSWEngg/Assignment/issues/19
+<br>
+
+## Team Members
 
 Pratham Hole CSB LCB2023003 prathamhole@gmail.com Prtm2110<br>
 Medha Bhardwaj CSB LCB2023053 medha140904@gmail.com medha-14<br>
