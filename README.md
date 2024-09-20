@@ -1,16 +1,15 @@
-# CSAICSBTeam0012
-CSAICSBTeam0012
+# CSAICSBTeam012
+CSAICSBTeam012
 
-### Team Kernel Crypters
-### Project idea: Google Pay
-### https://github.com/IIITLucknowSWEngg/Assignment/issues/19
+### Team Name: Strikers
+### Project idea: e-commerce software
+### https://github.com/IIITLucknowSWEngg/Assignment/issues/4
 <br>
 
 ## Team Members
-
-Pratham Hole CSB LCB2023003 prathamhole@gmail.com Prtm2110<br>
-Medha Bhardwaj CSB LCB2023053 medha140904@gmail.com medha-14<br>
-Safiya Nasir CSAI LCI2023053 hellosafiya6@gmail.com safiya2610<br>
-Shivang Agrahari CSB LCB2023030 shivangagraharijee2023@gmail.com shibo911<br>
-Hardee Parekh CSB LCB2023028 parekhhardee@gmail.com hardeeparekh<br>
-Shresth Sharma CSB LCB2023054 shresthsharma1711@gmail.com Shresth17<br>
+Ansh Bhargava CSB LCB2023012 bhargavaansh78@gmail.com bhargavaansh2211 <br>
+Ajay Baghel CSB LCB2023004 ajaybaghel1541@gmail.com ajaybaghel05 <br>
+Akshay Kumar CSB LCB2023007 lcb2023007@iiitl.ac.in akshay2023007 <br>
+Aryan Sharma CSB LCB2023019 aryan2021.jpr@gmail.com Aryansharma12344323<br>
+Utkarsh Gupta CSB LCB2023010 utkar721@gmail.com justkarsh <br>
+Sarthak Kumar CSAI LCI2023031 sarthakkumar22032005@gmail.com sarthakai31
