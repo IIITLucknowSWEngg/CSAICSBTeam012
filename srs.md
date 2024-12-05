@@ -11,7 +11,7 @@
 ### 2. Search and Browse (Buyers)
 - **FR2.1**: The system must allow product searches by keyword, category, or brand for buyers.
 - **FR2.2**: The system must support filters such as price range, rating, and stock status.
-- **FR2.3**: The system must provide personalized recommendations based on buyer activity.
+
 
 ### 3. Product Listing and Inventory Management (Sellers)
 - **FR3.1**: Sellers must be able to create new product listings with details such as images, price, and description.
