@@ -4,7 +4,7 @@
 ![alt text](<system context.png>)
 
 ### Plant UML code
-
+```
 @startuml
 !theme vibrant
 ' External Actors
@@ -65,13 +65,13 @@ DeliveryPartner --> Notifications : Delivery Alerts
 ' Payment interactions
 Payment --> PaymentPartner : Process Transactions
 @enduml
-
+```
 ## Container Diagram
 
 ![alt text](container.png)
 
 ### Plant UML code
-
+```
 @startuml
 !define RECTANGLE rectangle
 !define BOLD **<color:Black>**
@@ -121,13 +121,14 @@ paymentService --> paymentGateway : "Process Payments"
 notificationService --> pushNotification : "Send Push Notifications"
 orderService --> deliveryAPI : "Coordinate Deliveries"
 @enduml
-
+```
 
 ## Deployment Diagram
 
 ![alt text](deployment.png)
 
 ### Plant UML code
+```
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
 
@@ -179,13 +180,13 @@ Rel(product_service, media_storage, "Stores and fetches product images/videos", 
 Rel(web_app, media_storage, "Fetches images/videos from", "CDN")
 Rel(mobile_app, media_storage, "Fetches images/videos from", "CDN")
 @enduml
-
+```
 ## Component Diagram
 
 ![alt text](component.png)
 
 ### Plant UML code
-
+```
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
@@ -245,8 +246,4 @@ Rel(order, notification, "Sends order status updates")
 Rel(payment, notification, "Sends payment confirmation")
 
 @enduml
-
-
-
-
-
+```
