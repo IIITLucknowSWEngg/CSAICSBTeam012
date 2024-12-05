@@ -1,169 +1,141 @@
-# User Requirements Document (URD)
+# User Requirements Document (URD) for E-commerce Platform
 
-## 1. Introduction
+## Introduction
 
-### 1.1 Purpose
-This document outlines the user requirements for an e-commerce website. It serves as a guide for designing, developing, and testing the platform to ensure it meets the needs of its key users: customers, vendors, administrators, and other relevant users.
+This document outlines the specific user requirements for different profiles involved in the e-commerce platform. The goal is to define and specify the features, functionalities, and expectations for each user group to ensure the platform provides a seamless and efficient experience. The profiles covered in this document include Buyers, Sellers, Warehouse Managers, Investors, Logistics Partners, and Payment Gateways.
 
-### 1.2 Scope
-The e-commerce website will enable customers to browse and purchase products, vendors to list and manage inventory, administrators to oversee operations, delivery partners to handle logistics, and marketing teams to drive engagement. Key features include secure payments, order tracking, product reviews, customer support, and marketing tools.
-
-### 1.3 Definitions, Acronyms, and Abbreviations
-- **Customer**: A person shopping on the platform.
-- **Vendor**: A seller who lists products on the platform.
-- **Admin**: A person managing the website's operations.
-- **Guest User**: A user who browses the website without creating an account.
-- **Delivery Partner**: A person responsible for delivering customer orders.
-- **Marketing Team**: A team managing advertising, promotions, and user engagement.
-- **SSL**: A technology used to secure communications over the internet.
-
-### 1.4 References
-- SWEBOOK
-- stakeholders.md
+By addressing the unique needs of each user group, this document will guide the development of the platform's features, ensuring that it operates securely and efficiently, while optimizing user satisfaction and business growth.
 
 ---
 
-## 2. User Requirements
+### 1. **Buyer Profile: Arun Sharma (Age: 32, Frequent Shopper)**
 
-### 2.1 Customers
-- "I need the website to be simple and easy to navigate."
-- "I want to see product listings with:
-  - Clear images.
-  - Prices that show any additional charges, like shipping."
-- "I want to make secure payments that keep my information safe."
-- "I’d like to get tracking updates on my orders, including:
-  - The estimated delivery date.
-  - Real-time location updates."
+**User Registration & Authentication:**
+- I want to register using my email or phone number with a secure password.
+- I should be able to log in using my credentials or via Google, Facebook, or Apple.
+- If I forget my password, I want to recover it via email or SMS.
+- I want to update my personal information, such as my shipping address and payment methods.
 
-### 2.2 Vendors
-- "I want an easy way to:
-  - Upload my products with details like price, description, and pictures (minimum resolution: 500x500 pixels).
-  - Edit or delete my product listings when needed."
-- "I’d like to see reports that show my daily sales."
-- "I want to be paid for my sales within three business days."
-- "It’s important for me to know if customers leave reviews so I can improve my products or service."
+**Product Search & Browsing:**
+- I want to search products by name, category, brand, or keywords.
+- I should be able to filter products by price, brand, and rating.
+- I expect product recommendations based on my past purchases or browsing history.
 
-### 2.3 Administrators
-- "I need to monitor platform activity, such as the number of users and daily sales."
-- "I want to be alerted to any issues with orders or payments."
-- "I need tools to:
-  - Remove inappropriate products or reviews quickly.
-  - Resolve disputes between customers and vendors efficiently."
+**Shopping Cart & Checkout:**
+- I want to add, remove, and modify the quantity of items in my cart.
+- I’d like to save items for future purchases.
+- I want a secure checkout process and the option for guest checkout without creating an account.
 
-### 2.4 Guest Users
-- "I want to browse products without needing to sign up."
-- "I want to be able to view product details, including prices and reviews."
-- "I’d like to be able to add products to a cart and checkout as a guest."
-- "I want the option to create an account later for easier future purchases."
+**Product Information:**
+- I need detailed product descriptions, including price, images, and user reviews.
+- I should be able to leave reviews on products and read reviews from others.
+- I need real-time stock availability for products.
 
-### 2.5 Delivery Partners
-- "I need an easy-to-use interface to receive order delivery details."
-- "I want to see the customer's address, delivery instructions, and expected delivery time."
-- "I’d like to receive real-time updates on my deliveries, including any changes to the delivery route or time."
-- "I want to be able to mark deliveries as complete and view my payment details for completed deliveries."
+**Payment:**
+- I want to pay using credit/debit cards, e-wallets, or cash on delivery.
+- I expect payment confirmation via email and SMS once the transaction is processed.
 
-### 2.6 Marketing Team
-- "I need tools to create and manage advertising campaigns."
-- "I want to see customer engagement metrics for promotions and ads."
-- "I want to be able to send targeted emails and notifications to users for sales, discounts, and promotions."
-- "I need access to reports on user activity to help with marketing strategies."
+**Order Tracking & Management:**
+- I want to view and track my past and current orders.
+- I want notifications about order status updates and delivery times.
+
+**Notifications:**
+- I want to receive order updates and promotions through email or SMS.
+
+**Customer Support:**
+- I need easy access to customer support via email, phone, or live chat.
 
 ---
 
-## 3. Functional Requirements
+### 2. **Seller Profile: Floyd Electronics (Founded in 2010, 14 years in operation)**
 
-### 3.1 User Registration and Login
-- **Customers and Vendors** must:
-  - Register using an email or phone number.
-  - Log in securely with an option for two-factor authentication.
-  - Reset their password if needed.
-- **Guest Users** must:
-  - Browse the website without signing up.
-  - Have the option to create an account at checkout for a faster process in future orders.
+**User Registration & Authentication:**
+- We want to create a seller account with business information (e.g., tax details and contact information).
+- We need a secure login system with credentials or SSO via Google, Facebook, or Apple.
+- We should be able to update our business details and payment methods.
 
-### 3.2 Product Listings
-- **Vendors** must:
-  - Add product details such as name, price, description, and images (at least 500x500 pixels).
-  - Edit or remove product listings.
-- **Customers** must:
-  - View products by category or search using a search bar.
-  - See prices, ratings, and estimated delivery times (e.g., "Delivered in 3–5 days").
-- **Guest Users** must:
-  - View product listings without logging in.
+**Product Listing & Management:**
+- We need to list new products with images, descriptions, and prices.
+- We should be able to update product listings or remove products as needed.
+- We want to be notified when stock is running low and manage inventory.
 
-### 3.3 Payment and Checkout
-- **Payments** must:
-  - Support credit/debit cards, UPI, and wallets.
-  - Be processed using secure technology like SSL encryption.
-  - Include instant payment confirmation for customers.
-- **Vendors** must:
-  - Receive payments directly to their bank accounts within three business days.
+**Order Management:**
+- We want to update order statuses, provide tracking information, and manage returns and refunds.
+- We need the ability to cancel orders before shipment.
 
-### 3.4 Order Tracking
-- **Customers** must:
-  - Receive tracking details after placing an order, showing the estimated delivery date.
-- **Delivery Partners** must:
-  - Be notified about new deliveries, with real-time tracking updates.
+**Sales Reporting & Analytics:**
+- We need access to sales reports, revenue tracking, and performance metrics like best-selling products.
+- We should be able to analyze customer trends and make data-driven decisions.
 
-### 3.5 Reviews and Ratings
-- **Customers** must:
-  - Leave ratings (1–5 stars) and reviews after purchasing a product.
-- **Vendors** must:
-  - Respond to reviews if needed, addressing customer feedback.
+**Notifications:**
+- We want notifications for new orders, low inventory, and payment status updates.
 
-### 3.6 Customer Support
-The website must include:
-- FAQs and a "Contact Us" page with options for email and live chat.
-- Support tickets that are resolved within 24 hours.
-
-### 3.7 Admin Panel
-- **Admins** must:
-  - Manage user accounts (approve, suspend, or delete).
-  - See daily reports on activity, sales, and support tickets.
-  - Resolve disputes between customers and vendors.
-
-### 3.8 Marketing Tools
-- **Marketing Team** must:
-  - Create and manage marketing campaigns.
-  - Send promotional emails and push notifications.
-  - View user engagement data to optimize marketing strategies.
+**Customer Support:**
+- We need access to platform-related customer support for resolving issues.
 
 ---
 
-## 4. Non-Functional Requirements
+### 3. **Warehouse Manager Profile: Vijay Singh (Age: 40)**
 
-### 4.1 Performance
-- The website must load within 2 seconds on a 4G connection.
-- Handle 10,000 simultaneous users without slowdowns.
+**Order Fulfillment:**
+- I need to manage inventory and ensure orders are accurately picked, packed, and shipped on time.
+- I want access to real-time stock and order status updates.
 
-### 4.2 Security
-- Use AES-256 encryption to protect user data.
-- Support secure login with two-factor authentication.
+**Inventory Management:**
+- I need to maintain accurate stock records and prevent stock-outs.
+- I want notifications when stock levels are low.
 
-### 4.3 Usability
-- The design must work seamlessly on both desktop and mobile devices.
-- Navigation should allow users to find what they need within three clicks.
-
-### 4.4 Reliability
-- The platform must have 99.9% uptime, with backups created daily to avoid data loss.
-
-### 4.5 Scalability
-- Must support up to double the initial user base without performance issues.
+**Shipping & Logistics:**
+- I need to coordinate with delivery partners for timely deliveries.
+- I want real-time tracking of shipments to provide updates to customers.
 
 ---
 
-## 5. Assumptions and Dependencies
-- The platform assumes users have internet access and modern web browsers.
-- Payment and delivery services will use third-party integrations.
+### 4. **Investor Profile: Alpha Ventures (Founded in 2008, 16 years in operation)**
+
+**Financial Reporting:**
+- We need access to revenue, profit margins, and ROI reports.
+- We want regular updates on platform performance, sales growth, and market expansion.
+
+**Strategic Decisions:**
+- We want visibility into key platform metrics to make strategic decisions.
+- We need to influence business growth, market entry, and product offerings.
+
+**Notifications:**
+- We want alerts about major business changes and performance updates.
 
 ---
 
-## 6. Acceptance Criteria
-- All features must pass functional testing (e.g., payments processed securely, tracking updates sent).
-- Feedback from beta testing must resolve at least 95% of reported issues.
-- The website must meet performance benchmarks (e.g., load time < 2 seconds).
+### 5. **Logistics Partner Profile: FedEx (Founded in 1971, 53 years in operation)**
+
+**Shipping Management:**
+- We need to handle both domestic and international shipping for products ordered by customers.
+- We want to provide real-time tracking information for all shipments.
+
+**Delivery & Fulfillment:**
+- We need to ensure timely deliveries with high-quality service standards.
+- We want to update order statuses and provide real-time updates to customers.
 
 ---
 
-## 7. Conclusion
-This document captures the key requirements for the e-commerce website. By focusing on simplicity, security, and reliability, it aims to provide a seamless experience for customers, vendors, administrators, delivery partners, and the marketing team.
+### 6. **Payment Gateway Profile: RuPay (Founded in 1998, 26 years in operation)**
+
+**Transaction Processing:**
+- We need to facilitate secure online payments via credit/debit cards, e-wallets, and cash on delivery.
+- We must implement fraud detection and security protocols like SSL encryption to protect transaction data.
+
+**Security & Fraud Prevention:**
+- We need to ensure payment security with systems like 3D Secure to prevent unauthorized transactions.
+
+**Payment Confirmation:**
+- We need to send confirmation emails and SMS to both buyers and sellers once a payment is completed.
+
+---
+
+### Summary of Key Functional Requirements:
+- **Buyers** like Arun Sharma require an easy, secure shopping experience, with features like simple product search, secure payment options, and order tracking.
+- **Sellers** like Floyd Electronics need tools for product management, sales reporting, and efficient order fulfillment.
+- **Warehouse Managers** like Vijay Singh require real-time stock updates and streamlined order fulfillment processes.
+- **Investors** like Alpha Ventures need access to business performance data for making strategic decisions.
+- **Logistics Partners** like FedEx ensure timely deliveries and provide tracking updates.
+- **Payment Gateways** like RuPay process secure payments and ensure transaction safety with encryption and fraud prevention measures.
