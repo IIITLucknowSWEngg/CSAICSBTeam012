@@ -1,4 +1,6 @@
-# Software Design Description (SDD)
+### Software Design Description (SDD)
+
+---
 
 ## 1. Introduction
 
@@ -111,6 +113,8 @@ Handles user interactions and communicates with backend services.
 
 - Handles order processing, payment integration, and tracking.
 
+---
+
 ## 5. Database Design
 
 Entities include:
@@ -120,11 +124,9 @@ Entities include:
 - **Orders**: Purchase records and statuses.
 - **Cart**: Temporary data for items in cart.
 
-![Database Design](Database_Design.png)
-
 ### Plant UML Code
 
-```
+```plantuml
 @startuml
 entity User {
   *user_id : int
@@ -246,3 +248,19 @@ Order ||--|| Payment : "has"
 - **Scalability**: Handle 10,000 simultaneous users.
 - **Security**: PCI DSS compliance for payment processing.
 - **Availability**: 99.9% uptime.
+
+---
+
+## 7. Methodology
+
+### 7.1 Agile Methodology
+
+The e-commerce platform's development follows an Agile methodology to ensure flexibility and adaptability throughout the project lifecycle.
+
+Key aspects include:
+
+- **Scrum Framework**: Bi-weekly sprints with sprint planning, reviews, and retrospectives.
+- **Backlog Management**: Prioritized tasks in the product backlog to focus on high-value features.
+- **Continuous Integration and Deployment (CI/CD)**: Automated testing and deployment pipelines for rapid and reliable updates.
+- **Collaboration**: Regular stand-up meetings to enhance communication between cross-functional teams.
+- **Incremental Delivery**: Gradual feature rollouts for gathering user feedback and refining the product iteratively.
