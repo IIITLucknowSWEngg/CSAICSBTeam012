@@ -41,20 +41,16 @@ The e-commerce platform employs a microservices-based architecture with the foll
 
 - **React** for web interfaces.
 - **React Native** for mobile apps.
-- **PWA** support for mobile web users.
 
 #### Application Layer:
 
 - Microservices built with **Node.js** and **Express**.
 - REST and GraphQL APIs.
-- Asynchronous messaging with **RabbitMQ**.
 
 #### Data Layer:
 
-- Primary database: **PostgreSQL**.
-- Caching: **Redis**.
-- Full-text search: **Elasticsearch**.
-- Media storage: **AWS S3**.
+- Primary database: **MongoDB**.
+- Media storage: **Cloudinary**.
 
 ---
 
@@ -114,12 +110,6 @@ Handles user interactions and communicates with backend services.
 #### 4.2.4 Order Service
 
 - Handles order processing, payment integration, and tracking.
-
-#### 4.2.5 Recommendation Service
-
-- Generates personalized recommendations using machine learning.
-
----
 
 ## 5. Database Design
 

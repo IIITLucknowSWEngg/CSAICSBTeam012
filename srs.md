@@ -13,10 +13,10 @@
 - **FR2.2**: The system must support filters such as price range, rating, and stock status.
 
 
-### 3. Product Listing and Inventory Management (Sellers)
+### 3. Product Listing and Inventory Management (Sellers,employees)
 - **FR3.1**: Sellers must be able to create new product listings with details such as images, price, and description.
 - **FR3.2**: The system must allow sellers to edit and delete product listings.
-- **FR3.3**: The system must allow sellers to update inventory levels and track low-stock alerts.
+- **FR3.3**: The system must allow sellers,employees to update inventory levels and track low-stock alerts.
 
 ### 4. Product Management (Buyers)
 - **FR4.1**: The system must display product details including name, price, description, images, reviews, and specifications.
@@ -33,17 +33,17 @@
 - **FR6.2**: The system must securely process payments using a payment gateway.
 - **FR6.3**: Sellers must be able to receive payments and view transaction history.
 
-### 7. Order Tracking and Fulfillment (Buyers and Sellers)
+### 7. Order Tracking and Fulfillment (Buyers,Employee and Sellers)
 - **FR7.1**: Buyers must be able to view their order history and track current order status.
-- **FR7.2**: Sellers must be able to manage and fulfill orders, including updating shipment status and tracking.
-- **FR7.3**: The system must allow sellers to handle returns, refunds, and order cancellations.
+- **FR7.2**: Sellers,employees must be able to manage and fulfill orders, including updating shipment status and tracking.
+- **FR7.3**: The system must allow sellers,employees to handle returns, refunds, and order cancellations.
 
-### 8. Sales Reporting and Analytics (Sellers)
+### 8. Sales Reporting and Analytics (Sellers,investor)
 - **FR8.1**: The system must provide sellers with access to sales reports and analytics.
 - **FR8.2**: Sellers must be able to view performance metrics (e.g., best-selling products, total revenue).
 
-### 9. Notifications (Buyers and Sellers)
-- **FR9.1**: The system must send email or SMS notifications to buyers regarding order updates and promotional offers.
+### 9. Notifications (Buyers,investor and Sellers)
+- **FR9.1**: The system must send email or SMS notifications to buyers regarding order updates.
 - **FR9.2**: The system must send notifications to sellers for new orders, payment status, and inventory alerts.
 
 ### 10. Customer Support (Buyers and Sellers)
@@ -154,3 +154,9 @@ SecurePayments --> MakePayment : <<dependency>>
 FinancialReports --> ViewSalesData : <<dependency>>
 @enduml
 ```
+
+
+## GPT prompts used
+- Improve the language and the flow of the document 
+- Anything else that should be added 
+- Improve the given uml code so that diagram becomes more readable

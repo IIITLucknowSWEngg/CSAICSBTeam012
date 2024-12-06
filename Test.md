@@ -985,3 +985,9 @@ describe('Customer Support (Buyers and Sellers)', function() {
   });
 });
 ```
+
+
+
+## GPT prompts used
+- Improve the language and the flow of the document 
+- I am giving you the test for authentication and registration part, generate the test in the same format for the following.

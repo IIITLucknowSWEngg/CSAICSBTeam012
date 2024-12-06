@@ -6,3 +6,9 @@
 | **Investors and Shareholders**   | **Alpha Ventures** (Founded in 2008, 16 years in operation) - A venture capital firm specializing in funding tech startups, including e-commerce platforms. | **Venture Capitalist** | Provide funding, oversee financial performance, influence strategic decisions. | Influence company strategy, growth, and profitability. | Financial expertise, strategic vision, risk management. | External       |
 | **Logistics and Delivery Partners** | **FedEx** (Founded in 1971, 53 years in operation) - A global logistics company providing international shipping, tracking, and returns management. | **Shipping Company** | Manage global/domestic shipping, handle returns, and last-mile delivery. | Affects shipping speed, reliability, and customer experience. | Logistics expertise, global shipping, customer service. | External       |
 | **Payment Processors**           | **RuPay** (Founded in 1998, 26 years in operation) - A widely used payment gateway that facilitates secure online transactions and buyer protection globally. | **Payment Gateway** | Facilitate secure payments, handle transactions, prevent fraud. | Ensure secure financial transactions, affect conversion rates, and build customer trust. | Financial systems knowledge, cybersecurity, compliance standards. | External       |
+
+
+
+## GPT prompts used
+- Transform the given md document convert it into tabular form.
+- Improve the flow of the document

@@ -19,7 +19,6 @@ By addressing the unique needs of each user group, this document will guide the 
 **Product Search & Browsing:**
 - I want to search products by name, category, brand, or keywords.
 - I should be able to filter products by price, brand, and rating.
-- I expect product recommendations based on my past purchases or browsing history.
 
 **Shopping Cart & Checkout:**
 - I want to add, remove, and modify the quantity of items in my cart.
@@ -85,10 +84,6 @@ By addressing the unique needs of each user group, this document will guide the 
 - I need to maintain accurate stock records and prevent stock-outs.
 - I want notifications when stock levels are low.
 
-**Shipping & Logistics:**
-- I need to coordinate with delivery partners for timely deliveries.
-- I want real-time tracking of shipments to provide updates to customers.
-
 ---
 
 ### 4. **Investor Profile: Alpha Ventures (Founded in 2008, 16 years in operation)**
@@ -96,13 +91,6 @@ By addressing the unique needs of each user group, this document will guide the 
 **Financial Reporting:**
 - We need access to revenue, profit margins, and ROI reports.
 - We want regular updates on platform performance, sales growth, and market expansion.
-
-**Strategic Decisions:**
-- We want visibility into key platform metrics to make strategic decisions.
-- We need to influence business growth, market entry, and product offerings.
-
-**Notifications:**
-- We want alerts about major business changes and performance updates.
 
 ---
 
@@ -139,3 +127,9 @@ By addressing the unique needs of each user group, this document will guide the 
 - **Investors** like Alpha Ventures need access to business performance data for making strategic decisions.
 - **Logistics Partners** like FedEx ensure timely deliveries and provide tracking updates.
 - **Payment Gateways** like RuPay process secure payments and ensure transaction safety with encryption and fraud prevention measures.
+
+
+## GPT prompts used
+- Add the introduction and summary of this document
+- Improve the language and the flow of the document 
+- Anything else that should be added 

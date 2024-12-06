@@ -247,3 +247,8 @@ Rel(payment, notification, "Sends payment confirmation")
 
 @enduml
 ```
+
+
+## GPT prompts used
+- Improve the given uml code so that diagram becomes more readable
+- Add colours to make the diagram attractive
