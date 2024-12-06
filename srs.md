@@ -78,3 +78,79 @@
 
 ### 7. Maintainability
 - **NFR7.1**: The system must be easy to update and maintain, with modular and documented code to facilitate future enhancements.
+
+## UseCase Diagram
+
+![Use Case Diaram](UseCase_Diagram.png)
+
+### Plant UML Code
+```
+@startuml
+left to right direction
+skinparam backgroundColor #f0f8ff
+skinparam usecase {
+    BackgroundColor<<Main>> #FFCCCC
+    BackgroundColor<<Dependent>> #FFEECC
+}
+
+actor Customer
+actor Seller
+actor Employee
+actor Investor
+actor DeliveryPartner
+actor PaymentProcessor
+
+rectangle "E-Commerce Platform" {
+    (Browse products) as BrowseProducts
+    (Search for products) as SearchProducts
+    (Place an order) as PlaceOrder
+    (Make a payment) as MakePayment
+    (Track order) as TrackOrder
+    (View sales data) as ViewSalesData
+    (List products) as ListProducts
+    (Manage inventory) as ManageInventory
+    (Fulfill orders) as FulfillOrders
+    (Provide delivery updates) as DeliveryUpdates
+    (Secure payment processing) as SecurePayments
+    (Generate financial reports) as FinancialReports
+}
+
+' Relationships for Customers
+Customer --> BrowseProducts
+Customer --> PlaceOrder
+Customer --> MakePayment
+Customer --> TrackOrder
+
+' Relationships for Sellers
+Seller --> ListProducts
+Seller --> ManageInventory
+Seller --> ViewSalesData
+
+' Relationships for Employees
+Employee --> FulfillOrders
+Employee --> ManageInventory
+Employee --> FinancialReports
+
+' Relationships for Delivery Partners
+DeliveryPartner --> DeliveryUpdates
+DeliveryPartner --> FulfillOrders
+
+' Relationships for Payment Processors
+PaymentProcessor --> SecurePayments
+PaymentProcessor --> MakePayment
+
+' Relationships for Investors
+Investor --> FinancialReports
+Investor --> ViewSalesData
+
+' <<extend>> relationships
+SearchProducts .u.> BrowseProducts : <<extend>>
+TrackOrder .u.> PlaceOrder : <<extend>>
+DeliveryUpdates .u.> FulfillOrders : <<extend>>
+
+' <<dependency>> relationships
+MakePayment --> PlaceOrder : <<dependency>>
+SecurePayments --> MakePayment : <<dependency>>
+FinancialReports --> ViewSalesData : <<dependency>>
+@enduml
+```
