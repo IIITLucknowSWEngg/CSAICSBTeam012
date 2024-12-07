@@ -1,4 +1,4 @@
-### Software Design Description (SDD)
+# Software Design Description (SDD)
 
 ---
 
@@ -124,9 +124,11 @@ Entities include:
 - **Orders**: Purchase records and statuses.
 - **Cart**: Temporary data for items in cart.
 
+![Database Design Diagram](<Database_Design.png>)
+
 ### Plant UML Code
 
-```plantuml
+```
 @startuml
 entity User {
   *user_id : int
