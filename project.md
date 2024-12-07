@@ -64,3 +64,7 @@ This project aims to build a user-friendly e-commerce platform similar to Amazon
 - Monitor platform performance and user feedback.
 - Release regular updates to address issues, add features, and improve security.
 - Provide ongoing customer and seller support.
+
+## GPT prompts used 
+### 1. Improve the flow of the document
+### 2. Add anything that is missing
