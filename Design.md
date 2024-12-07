@@ -117,13 +117,6 @@ Handles user interactions and communicates with backend services.
 
 ## 5. Database Design
 
-Entities include:
-
-- **Users**: Customer data and preferences.
-- **Products**: Details, categories, and stock levels.
-- **Orders**: Purchase records and statuses.
-- **Cart**: Temporary data for items in cart.
-
 ![Database Design Diagram](<Database_Design.png>)
 
 ### Plant UML Code
