@@ -246,16 +246,3 @@ Order ||--|| Payment : "has"
 
 ---
 
-## 7. Methodology
-
-### 7.1 Agile Methodology
-
-The e-commerce platform's development follows an Agile methodology to ensure flexibility and adaptability throughout the project lifecycle.
-
-Key aspects include:
-
-- **Scrum Framework**: Bi-weekly sprints with sprint planning, reviews, and retrospectives.
-- **Backlog Management**: Prioritized tasks in the product backlog to focus on high-value features.
-- **Continuous Integration and Deployment (CI/CD)**: Automated testing and deployment pipelines for rapid and reliable updates.
-- **Collaboration**: Regular stand-up meetings to enhance communication between cross-functional teams.
-- **Incremental Delivery**: Gradual feature rollouts for gathering user feedback and refining the product iteratively.
