@@ -36,7 +36,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 **Order Tracking & Management:**
 - I want to view and track my past and current orders.
-- I want notifications about order status updates and delivery times.
+- I want notifications about order status updates and delivery times(via Whatsapp).
 
 **Notifications:**
 - I want to receive order updates and promotions through email or SMS.
