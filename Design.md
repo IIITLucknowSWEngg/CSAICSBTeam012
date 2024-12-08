@@ -246,3 +246,9 @@ Order ||--|| Payment : "has"
 
 ---
 
+
+## GPT prompts used
+- Improve the language and the flow of the document
+- Anything else that should be added
+- Improve the given uml code so that diagram becomes more readable
+
