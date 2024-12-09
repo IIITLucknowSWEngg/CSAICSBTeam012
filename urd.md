@@ -106,7 +106,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 6. **Payment Gateway Profile: RuPay (Founded in 1998, 26 years in operation)**
+### 6. **Payment Gateway Profile: RuPay (Founded in 2012)**
 
 **Transaction Processing:**
 - We need to facilitate secure online payments via credit/debit cards, e-wallets, and cash on delivery.
