@@ -8,7 +8,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 1. **Buyer Profile: Arun Sharma (Age: 32, Frequent Shopper)**
+### 1. **Buyers Profile: Arun Sharma (Age: 32, Frequent Shopper)**
 
 **User Registration & Authentication:**
 - I want to register using my email or phone number with a secure password.
@@ -46,7 +46,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 2. **Seller Profile: Floyd Electronics (Founded in 2010, 14 years in operation)**
+### 2. **Sellers Profile: Floyd Electronics (Founded in 2010, 14 years in operation)**
 
 **User Registration & Authentication:**
 - We want to create a seller account with business information (e.g., tax details and contact information).
@@ -74,7 +74,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 3. **Employees : (Warehouse Manager Profile- Vijay Singh (Age: 40))**
+### 3. **Employees Profile : (Warehouse Manager Profile- Vijay Singh (Age: 40))**
 
 **Order Fulfillment:**
 - I need to manage inventory and ensure orders are accurately picked, packed, and shipped on time.
@@ -94,7 +94,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 5. **Logistics Partner Profile: FedEx (Founded in 1971, 53 years in operation)**
+### 5. **Logistics and Delivery Partners Profile: FedEx (Founded in 1971, 53 years in operation)**
 
 **Shipping Management:**
 - We need to handle both domestic and international shipping for products ordered by customers.
