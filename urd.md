@@ -74,7 +74,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 3. **Warehouse Manager Profile: Vijay Singh (Age: 40)**
+### 3. **Employees : (Warehouse Manager Profile- Vijay Singh (Age: 40))**
 
 **Order Fulfillment:**
 - I need to manage inventory and ensure orders are accurately picked, packed, and shipped on time.
@@ -86,7 +86,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 4. **Investor Profile: Alpha Ventures (Founded in 2008, 16 years in operation)**
+### 4. **Investors and Shareholders Profile: Alpha Ventures (Founded in 2008, 16 years in operation)**
 
 **Financial Reporting:**
 - We need access to revenue, profit margins, and ROI reports.
