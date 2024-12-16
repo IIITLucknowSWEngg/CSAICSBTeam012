@@ -111,7 +111,125 @@ Handles user interactions and communicates with backend services.
 
 - Handles order processing, payment integration, and tracking.
 
-## 5. Database Design
+## 5. Swimlane diagram
+
+### 5.1 for ordering a product
+![alt text](<order swimlane.png>)
+
+```
+@startuml
+|Customer|
+start
+:Select product(s);
+:View cart;
+:Proceed to checkout;
+
+|Web/Mobile App|
+:Display checkout page;
+:Send order details to Order Service;
+
+|Order Service|
+:Validate order details;
+:Check product availability;
+if (Products available?) then (Yes)
+  :Initiate payment process;
+else (No)
+  :Notify customer;
+  stop
+endif
+
+|Payment Gateway|
+:Process payment;
+if (Payment successful?) then (Yes)
+  :Send payment confirmation;
+else (No)
+  :Send payment failure notification;
+  stop
+endif
+
+|Order Service|
+:Update order status;
+:Notify Seller for order fulfillment;
+
+|Seller|
+:Prepare product for shipping;
+:Update shipping details;
+
+|Notification Service|
+:Send order confirmation to customer;
+:Send shipping details to customer;
+
+|Customer|
+:Receive order confirmation;
+stop
+@enduml
+```
+### 5.2 for returning a product
+![alt text](<return product swimlane.png>)
+
+
+```
+@startuml
+|Customer|
+start
+:Request product return;
+:Provide reason for return;
+:Initiate return request;
+
+|Web/Mobile App|
+:Submit return request to Return Service;
+
+|Return Service|
+:Validate return eligibility;
+if (Return eligible?) then (Yes)
+  :Approve return;
+  :Notify Customer;
+  :Notify Seller;
+else (No)
+  :Reject return request;
+  :Notify Customer;
+  stop
+endif
+
+|Seller|
+:Receive return request;
+:Review and confirm return;
+
+|Return Service|
+:Schedule return pickup with Delivery Partner;
+:Generate return shipping label;
+:Update return status;
+
+|Notification Service|
+:Send pickup schedule to customer;
+:Notify seller of product return;
+
+|Delivery Partner|
+:Pick up product from customer;
+:Ship product to seller;
+
+|Seller|
+:Inspect returned product;
+if (Product acceptable?) then (Yes)
+  :Approve refund/exchange;
+else (No)
+  :Reject refund/exchange;
+endif
+
+|Return Service|
+:Update refund/exchange status;
+:Initiate refund/exchange process;
+
+|Notification Service|
+:Notify customer of refund/exchange status;
+
+|Customer|
+:Receive refund or exchange product;
+stop
+@enduml
+
+```
+## 6. Database Design
 
 Entities include:
 
@@ -237,12 +355,4 @@ Product ||--o{ WishlistItem : "is in"
 Order ||--|| Payment : "has"
 @enduml
 ```
-
 ---
-
-## 6. Non-Functional Requirements
-
-- **Performance**: Sub-2 second page loads.
-- **Scalability**: Handle 10,000 simultaneous users.
-- **Security**: PCI DSS compliance for payment processing.
-- **Availability**: 99.9% uptime.
