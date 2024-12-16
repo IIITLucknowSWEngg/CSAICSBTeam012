@@ -54,7 +54,7 @@
 
 ### 1. Performance
 - **NFR1.1**: The system should load pages and respond to user actions (search, browse, checkout) within 2 seconds.
-- **NFR1.2**: The system should be able to handle high traffic volumes, especially during peak times (e.g., Black Friday sales).
+- **NFR1.2**: The system should be able to handle high traffic volumes, especially during peak times.
 
 ### 2. Security
 - **NFR2.1**: The system must ensure secure data transmission by using HTTPS and SSL encryption.
@@ -63,10 +63,9 @@
 
 ### 3. Usability
 - **NFR3.1**: The system must provide a responsive design for all devices (mobile, tablet, desktop).
-- **NFR3.2**: The system must comply with Web Content Accessibility Guidelines (WCAG) to ensure accessibility for users with disabilities.
-
+  
 ### 4. Reliability
-- **NFR4.1**: The system must maintain 99.9% uptime to ensure continuous availability for users.
+- **NFR4.1**: The system must maintain 99% uptime to ensure continuous availability for users.
 - **NFR4.2**: The system must implement a disaster recovery process with regular data backups.
 
 ### 5. Scalability

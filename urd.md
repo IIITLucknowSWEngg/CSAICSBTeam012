@@ -8,7 +8,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 1. **Buyer Profile: Arun Sharma (Age: 32, Frequent Shopper)**
+### 1. **Buyers Profile: Arun Sharma (Age: 32, Frequent Shopper)**
 
 **User Registration & Authentication:**
 - I want to register using my email or phone number with a secure password.
@@ -36,7 +36,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 **Order Tracking & Management:**
 - I want to view and track my past and current orders.
-- I want notifications about order status updates and delivery times.
+- I want notifications about order status updates and delivery times(via Whatsapp).
 
 **Notifications:**
 - I want to receive order updates and promotions through email or SMS.
@@ -46,7 +46,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 2. **Seller Profile: Floyd Electronics (Founded in 2010, 14 years in operation)**
+### 2. **Sellers Profile: Floyd Electronics (Founded in 2010, 14 years in operation)**
 
 **User Registration & Authentication:**
 - We want to create a seller account with business information (e.g., tax details and contact information).
@@ -74,7 +74,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 3. **Warehouse Manager Profile: Vijay Singh (Age: 40)**
+### 3. **Employees Profile : (Warehouse Manager Profile- Vijay Singh (Age: 40))**
 
 **Order Fulfillment:**
 - I need to manage inventory and ensure orders are accurately picked, packed, and shipped on time.
@@ -86,7 +86,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 4. **Investor Profile: Alpha Ventures (Founded in 2008, 16 years in operation)**
+### 4. **Investors and Shareholders Profile: Alpha Ventures (Founded in 2008, 16 years in operation)**
 
 **Financial Reporting:**
 - We need access to revenue, profit margins, and ROI reports.
@@ -94,7 +94,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 5. **Logistics Partner Profile: FedEx (Founded in 1971, 53 years in operation)**
+### 5. **Logistics and Delivery Partners Profile: FedEx (Founded in 1971, 53 years in operation)**
 
 **Shipping Management:**
 - We need to handle both domestic and international shipping for products ordered by customers.
@@ -106,7 +106,7 @@ By addressing the unique needs of each user group, this document will guide the 
 
 ---
 
-### 6. **Payment Gateway Profile: RuPay (Founded in 1998, 26 years in operation)**
+### 6. **Payment Gateway Profile: RuPay (Founded in 2012)**
 
 **Transaction Processing:**
 - We need to facilitate secure online payments via credit/debit cards, e-wallets, and cash on delivery.

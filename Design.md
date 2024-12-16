@@ -1,5 +1,7 @@
 # Software Design Description (SDD)
 
+---
+
 ## 1. Introduction
 
 ### 1.1 Purpose
@@ -229,16 +231,10 @@ stop
 @enduml
 
 ```
+---
 ## 6. Database Design
 
-Entities include:
-
-- **Users**: Customer data and preferences.
-- **Products**: Details, categories, and stock levels.
-- **Orders**: Purchase records and statuses.
-- **Cart**: Temporary data for items in cart.
-
-![Database Design](Database_Design.png)
+![Database Design Diagram](<Database_Design.png>)
 
 ### Plant UML Code
 

@@ -31,3 +31,4 @@ This project aims to build a user-friendly e-commerce platform similar to Amazon
 ### 3. Platform Management
 - **Admin Panel**: Manage users, products, orders, and disputes.
 - **Security**: SSL encryption, secure payment processing.
+
