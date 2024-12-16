@@ -54,7 +54,7 @@
 
 ### 1. Performance
 - **NFR1.1**: The system should load pages and respond to user actions (search, browse, checkout) within 2 seconds.
-- **NFR1.2**: The system should be able to handle high traffic volumes, especially during peak times.
+- **NFR1.2**: The system should be able to handle high traffic volumes upto 100,000 concurrently , especially during festival and sale(eg. diwali sale) time.
 
 ### 2. Security
 - **NFR2.1**: The system must ensure secure data transmission by using HTTPS and SSL encryption.
@@ -81,6 +81,7 @@
 ## UseCase Diagram
 
 ![Use Case Diaram](UseCase_Diagram.png)
+
 
 ### Plant UML Code
 ```
@@ -153,7 +154,53 @@ SecurePayments --> MakePayment : <<dependency>>
 FinancialReports --> ViewSalesData : <<dependency>>
 @enduml
 ```
+### **Use case description**
 
+1.  **Customer**
+    -   **Browse products**: Customers can explore available products on the e-commerce platform.
+    -   **Search for products**: Customers can look for specific products using filters like categories, keywords, or price ranges.
+    -   **Place an order**: Customers can add products to their cart and complete the purchase.
+    -   **Track order**: Customers can monitor the delivery status of their placed orders.
+    -   **Make a payment**: Customers complete the payment process during checkout using secure payment methods.
+
+
+
+2.  **Seller**
+    -   **List products**: Sellers can add products to the platform with details like price, images, and descriptions.
+    -   **Fulfill orders**: Sellers manage and process orders placed by customers.
+    -   **Manage inventory**: Sellers update and monitor product stock levels to ensure availability.
+    -   **View sales data**: Sellers can review data related to their product sales performance.
+
+
+
+3.  **Employee**
+    -   **Generate financial reports**: Employees create detailed financial reports to analyze platform revenue and performance.
+    -   **Manage inventory**: Employees may assist in overseeing stock levels or inventory processes for platform-managed items.
+
+
+
+4.  **Investor** 
+    -   **Generate financial reports**: Investors analyze the platform's sales data to evaluate business performance.
+
+5.  **Delivery Partner**
+    -   **Provide delivery updates**: Delivery partners ensure customers and sellers receive real-time updates on delivery status.
+    -   **Fulfill orders**: Delivery partners handle the shipping and delivery process for placed orders.
+
+
+
+6.  **Payment Processor**
+    -   **Secure payment processing**: The payment processor ensures transactions are securely handled using payment gateways.
+    -   **Process a payment**: Processes payments initiated by customers during checkout.
+
+
+
+### **Dependencies and Extensions**
+
+1.  **Place an order** depends on **Make a payment** to complete the checkout process.
+2.  **Fulfill orders** extends **Provide delivery updates**, as delivery updates are part of fulfilling an order.
+3.  **Track order** extends **Place an order** because order tracking is only applicable after an order is placed.
+4.  **Browse products** extends **Search for products**, as searching is an advanced feature of browsing.
+5.  **Generate financial reports** depends on **View sales data** for accurate reporting.
 
 ## GPT prompts used
 - Improve the language and the flow of the document 
